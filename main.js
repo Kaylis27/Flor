@@ -1,5 +1,5 @@
 window.onload = () => {
     setTimeout(() => {
         document.body.classList.remove("container");
-    }, 18000); // 18 segundos de espera
+    }, 15000); // 15 segundos de retraso jsjs
 };
