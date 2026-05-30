@@ -57,7 +57,9 @@ body{
     }
 }
 
-/* --- SECUENCIA DE ANIMACIÓN CORREGIDA (13 LETRAS) --- */
+/* --- SECUENCIA DE ANIMACIÓN FILTRADA (13 LETRAS) --- */
+
+/* Primeros 4: Animan en secuencia al inicio */
 .greetings > span:nth-child(1){
     animation-delay: 0s;
 }
@@ -70,33 +72,31 @@ body{
 .greetings > span:nth-child(4){
     animation-delay: .6s;
 }
-.greetings > span:nth-child(5){
+
+/* Del 5 al 9: NO se animan (se quedan estáticos y visibles) */
+.greetings > span:nth-child(5),
+.greetings > span:nth-child(6),
+.greetings > span:nth-child(7),
+.greetings > span:nth-child(8),
+.greetings > span:nth-child(9) {
+    animation: none !important;
+    opacity: 1 !important; /* Evita que se queden ocultos si el diseño base empieza en opacidad 0 */
+}
+
+/* Últimos 4: Continúan la animación de forma fluida */
+.greetings > span:nth-child(10){
     animation-delay: .8s;
 }
-.greetings > span:nth-child(6){
+.greetings > span:nth-child(11){
     animation-delay: 1s;
 }
-.greetings > span:nth-child(7){
+.greetings > span:nth-child(12){
     animation-delay: 1.2s;
 }
-.greetings > span:nth-child(8){
+.greetings > span:nth-child(13){
     animation-delay: 1.4s;
 }
-.greetings > span:nth-child(9){
-    animation-delay: 1.6s;
-}
-.greetings > span:nth-child(10){
-    animation-delay: 1.8s;
-}
-.greetings > span:nth-child(11){
-    animation-delay: 2s;
-}
-.greetings > span:nth-child(12){
-    animation-delay: 2.2s;
-}
-.greetings > span:nth-child(13){
-    animation-delay: 2.4s;
-}
+
 /* ---------------------------------------- */
 
 .description{
