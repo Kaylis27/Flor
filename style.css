@@ -78,22 +78,23 @@ body{
 .greetings > span:nth-child(6),
 .greetings > span:nth-child(7),
 .greetings > span:nth-child(8),
-.greetings > span:nth-child(9) {
+.greetings > span:nth-child(9),
+.greetings > span:nth-child(10),{
     animation: none !important;
     opacity: 1 !important; /* Evita que se queden ocultos si el diseño base empieza en opacidad 0 */
 }
 
 /* Últimos 4: Continúan la animación de forma fluida */
-.greetings > span:nth-child(10){
+.greetings > span:nth-child(11){
     animation-delay: .8s;
 }
-.greetings > span:nth-child(11){
+.greetings > span:nth-child(12){
     animation-delay: 1s;
 }
-.greetings > span:nth-child(12){
+.greetings > span:nth-child(13){
     animation-delay: 1.2s;
 }
-.greetings > span:nth-child(13){
+.greetings > span:nth-child(14){
     animation-delay: 1.4s;
 }
 
