@@ -1657,7 +1657,7 @@ h1 {
 }
 
 /* Agregar más estilos según sea necesario */
-/* --- EXCEPCIÓN PARA QUE EL POEMA SE MUESTRE DE INMEDIATO --- */
+/*EXCEPCIÓN PARA QUE EL POEMA SE MUESTRE DE INMEDIATO*/
 .titulo, #lyrics, .greetings, .greetings * {
   animation-play-state: running !important;
   -webkit-animation-play-state: running !important;
