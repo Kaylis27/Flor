@@ -57,7 +57,7 @@ body{
     }
 }
 
-/* --- SECUENCIA DE ANIMACIÓN FILTRADA (13 LETRAS) --- */
+/* SECUENCIA DE ANIMACIÓN FILTRADA (14LETRAScodes)*/
 
 /* Primeros 4: Animan en secuencia al inicio */
 .greetings > span:nth-child(1){
@@ -73,7 +73,7 @@ body{
     animation-delay: .6s;
 }
 
-/* Del 5 al 9: NO se animan (se quedan estáticos y visibles) */
+/* Del 5 al 9: NO se animan */
 .greetings > span:nth-child(5),
 .greetings > span:nth-child(6),
 .greetings > span:nth-child(7),
@@ -84,7 +84,7 @@ body{
     opacity: 1 !important; /* Evita que se queden ocultos si el diseño base empieza en opacidad 0 */
 }
 
-/* Últimos 4: Continúan la animación de forma fluida */
+/*Continúan la animación de forma fluida */
 .greetings > span:nth-child(11){
     animation-delay: .8s;
 }
@@ -126,7 +126,7 @@ body{
         font-size: 1rem;
     }
 }
-/* --- EXCEPCIÓN PARA QUE EL POEMA SE MUESTRE DE INMEDIATO --- */
+/* EXCEPCIÓN PARA QUE EL POEMA SE MUESTRE DE INMEDIATO */
 .titulo, #lyrics, .greetings, .greetings * {
   animation-play-state: running !important;
   -webkit-animation-play-state: running !important;
