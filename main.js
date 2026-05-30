@@ -1,3 +1,5 @@
-onload = () =>{
-    document.body.classList.remove("container");
+window.onload = () => {
+    setTimeout(() => {
+        document.body.classList.remove("container");
+    }, 18000); // 18 segundos de espera
 };
